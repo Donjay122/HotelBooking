@@ -1,14 +1,15 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "root";
+
+$servername = "us-cdbr-iron-east-02.cleardb.net";
+$username = "b59b5a37513c8b";
+$password = "2c6935ff";
 
 // MAKE CONNECTION
 
 try{
 
-    $conn = new PDO("mysql:host=$servername; dbname=database" , $username , $password);
+    $conn = new PDO("mysql:host=$servername; dbname=heroku_bcd74fb2c06bd97" , $username , $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 }catch(Exception $e){
